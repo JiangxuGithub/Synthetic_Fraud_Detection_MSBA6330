@@ -1,0 +1,15 @@
+{
+	"fileLocations": [
+		{
+			"URIPrefixes": [
+					"https://s3-us-eas1.amazonaws.com/bucket-name/"
+			]
+		}
+	],
+	"globalUploadSettings": {
+			"format":"CSV",
+			"delimiter": ",",
+			"textqualifier": "'",
+			"containsHeader": "false"
+	}
+}
