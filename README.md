@@ -1,4 +1,4 @@
-# trends in the marketplace 2021-fraud detection-team7
+# Trends in the Marketplace 2021-Fraud Detection-Team7
 
 # Introduction:  
    
