@@ -39,7 +39,7 @@ Query output
 
 # Links to Project
 
-Link to Project Video: https://youtu.be/3A_sdIarexU 
+Link to Project Video: https://youtu.be/XPwLoiuqLhM
 
 ![Link to Handout](/handout_flyer/AWS_Fraud_Detection_Team_7.pdf)
 
