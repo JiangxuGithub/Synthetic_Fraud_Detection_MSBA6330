@@ -2,7 +2,7 @@
 
 # Introduction:  
    
-According to Forbes, fraud costs merchants and estimate $190 billion each year<sup>1</sup>. To combat this, several real time machine learning products have been developed over the years. One of these products is Amazon Web Services, which offers an end to end pipeline solution, all under one architecture. This example is based on the template created by pmhargis-aws<sup>2</sup>. In our example, we will create an artificial representation of real time fraud detection. First, we will create an synthetic credit card fraud data set. This will then be stored in an Amazon S3 bucket which will be the historical training set for our machine learning model. The model will be trained using Amazon SageMaker which will later be used to predict the streamed in data to provide real time fraud detection. The real time data itself will be streamed in using Amazon Kinesis as well as AWS Lambda. Finally the output will be streamed to AWS Cloudwatch where the logs can be analyzed. This template is just an example to familiarize you with the potential for AWS. Because AWS was designed with scalability in mind, this example could be scaled up to handle thousands of transactions a second.
+According to Forbes, fraud costs merchants an estimated $190 billion each year<sup>1</sup>. To combat this, several real time machine learning products have been developed over the years. One of these products is Amazon Web Services, which offers an end to end pipeline solution entirely under one architecture. This example is based on the template created by pmhargis-aws<sup>2</sup>. In our example, we will create an artificial representation of real time fraud detection. First, we will create an synthetic credit card fraud data set. This will then be stored in an Amazon S3 bucket which will become the historical training set for our machine learning model. The model will be trained using Amazon SageMaker which will then later be used to predict the streamed in data to provide real time fraud detection. The real time data itself will be streamed in using Amazon Kinesis as well as AWS Lambda. Finally the output will be streamed to AWS Cloudwatch where the logs can be analyzed. This template is just an example to familiarize you with the potential for AWS. Because AWS was designed with scalability in mind, this example could be scaled up to handle thousands of transactions a second.
 
 
 # Implementation:
@@ -14,13 +14,13 @@ According to Forbes, fraud costs merchants and estimate $190 billion each year<s
 
 ![](images/template_upload.PNG)
 
-3. Simply click next leaving default settings in place. If prompted for a stack name, you will need to repeat it in notebook number one. Continue along until you are prompted to, "I acknowledge that AWS CloudFormation might create IAM resources". Check this box and create the stack. This may take several minutes.
+3. Continue clicking next while leaving the default settings in place. If prompted for a stack name, you will need to repeat it in notebook number one. Continue along until you are prompted to check, "I acknowledge that AWS CloudFormation might create IAM resources". Check this box and create the stack. This may take several minutes.
 
 ![](images/checkbox_create_stack.PNG)
 
 4. Use the search bar to navigate to SageMaker. On the lefthand column click notebook instances and then "open in jupyter".
 
-5. The notebooks created are to be run sequentially. Notebook 5 is a cleanup notebook that should not be run until you are finished. Due to an error that occurs using the template provided by pmhargis-aws, we have provided a modified template to be more accomodating. This does however limit the allocated processing power from what the original template expected. As a result, we recommend replacing notebooks 2 and 3 with the ones provided in the repository as they have also been modified, in order to work more efficiently with the new template limitations.
+5. The notebooks created are to be run sequentially. Notebook 5 is a cleanup notebook that should not be run until you are finished. Due to an error that occurs using the template provided by pmhargis-aws, we have provided a modified template to be more accomodating. This does however limit the allocated processing power from what the original template expected. As a result, we recommend replacing notebooks 2 and 3 with the ones provided in the repository as they have also been modified, to work more efficiently with the new template limitations.
 
 # Cloud Watch Analysis
 
